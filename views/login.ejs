@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Traffic Monitoring System</title>
+    <script src="https://kit.fontawesome.com/7cddce98d5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/traffic_small_logo.png">
+  </head>
+    <body>
+      <div class="container-fluid introd">
+
+        <section id='nav'>
+          <nav class="navbar navbar-expand-lg navbar-dark ">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top logo" loading="lazy" alt="logo-pic">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+            </div>
+
+          </nav>
+
+
+        </section>
+      </div>
+      <section id='login'>
+        <h1 class="logintitle">Login</h1>
+        <form action='/login' method='post' style="border-color:#66bfbf">
+        <div class="container logindiv">
+            <label>Username : </label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <label>Password : </label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <button type="submit">Login</button>
+
+        </div>
+    </form>
+      </section>
+      <footer id="footer">
+        <i class="fab fab-foot fa-twitter"></i>
+        <i class="fab fab-foot fa-facebook-f"></i>
+        <i class="fab fab-foot fa-instagram"></i>
+        <i class="fas fab-foot fa-envelope"></i>
+
+        <p>© Copyright 2020 TMS</p>
+
+      </footer>
+
+  </body>
+</html>

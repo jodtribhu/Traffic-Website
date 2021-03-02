@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Traffic Monitoring System</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/7cddce98d5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="icon" href="/images/traffic_small_logo.png">
+</head>
+
+<body>
+  <div class="container-fluid introd">
+
+    <section id='nav'>
+      <nav class="navbar navbar-expand-lg navbar-dark ">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top logo" loading="lazy" alt="logo-pic">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav" ,>
+            <li class="nav-item active">
+              <a class="nav-link" href="home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registration">Registration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="challan">Challans</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                More
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="insurance">Insurance</a>
+                <a class="dropdown-item" href="licence">Licence</a>
+                <a class="dropdown-item" href="maintanence">Maintanence</a>
+                <a class="dropdown-item" href="case">Case</a>
+                <a class="dropdown-item" href="learners">Learners</a>
+                <a class="dropdown-item" href="cameraincident">Camera Incidents</a>
+                <a class="dropdown-item" href="tolltransaction">Toll Booth Transactions</a>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link signout" href="login">Sign Out</a>
+          </li>
+        </ul>
+
+      </nav>
+
+
+    </section>
+  </div>
+  <section id='MainSpace'>
+    <div class="main card ">
+      <div class="header colorfill">
+        <div class="logo-wrapper">
+          <img src="images/challan_clipart.png" class="pic">
+        </div>
+        <div class="container2">
+            <form class="" action="/challan" method="post">
+          <h2 class="page_heading">CHALLANS</h2>
+          <h3 class="page_sub_heading">Check the status of your challan here .</h3>
+
+            <div class="option_style">
+              <div class="option_style form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOption1" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Challan Number</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOption2" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Vehicle Number</label>
+              </div>
+
+            </div>
+            <div class="form-size col-xs-3">
+              <label id='label-formtext' for="regno" class="userinputtitle">Enter the Vehicle Registration Number:</label>
+              <input type="text" name="regno" value="" style="margin :20px; width: 300px;" required>
+            </div>
+
+            <div class="row">
+              <div class=" col-lg-6 col-md-6 col-sm-12">
+                <button type="submit" name="submit" class="btn button-style btn-outline-dark">Search</button>
+              </div>
+            </form>
+              <form class="" action="/newchallan" method="post">
+              <div class=" col-lg-6 col-md-6 col-sm-12">
+                <button type="submit" name="addnew" class=" button-style btn btn-outline-dark ">Add new</button>
+              </div>
+              </form>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <footer id="footer">
+    <i class="fab fab-foot fa-twitter"></i>
+    <i class="fab fab-foot fa-facebook-f"></i>
+    <i class="fab fab-foot fa-instagram"></i>
+    <i class="fas fab-foot fa-envelope"></i>
+
+    <p>© Copyright 2020 TMS</p>
+
+  </footer>
+  <script src="challan.js" charset="utf-8"></script>
+</body>
+
+</html>
